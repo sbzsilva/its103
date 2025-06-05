@@ -6,50 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Student Registration</h2>
-        <p>Please fill out all requeired fields to complet your registration</p> 
+
+<div class="container">
+    <h2>Student Registration</h2>
+    <p>Please fill out all required fields to complete your registration</p>
+
     <form action="#" method="post">
         <div class="inline-group">
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name" id="first_name" required>
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" required>
 
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" id="last_name" required>
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
 
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone" required>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        <small>mm/dd/yyyy</small>
 
-            <label for="dob">Date of Birthf</label>
-            <input type="date" name="dob" id="dob" required></input>
-            </input>
+        <label for="program">Program of Study *</label>
+        <select id="program" name="program" required>
+            <option value="">Select your program</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Business Administration">Business Administration</option>
+            <option value="Graphic Design">Graphic Design</option>
+        </select>
 
-            <label for="program">Program of Study</label>
-            <select name="program" id="program" required>
-                <option value="">Select your program</option>
-                <option value="Computer Science">Computer Science</option>
-                <option value="Business Administration">Business Administration</option>
-                <option value="Graphic Design">Graphic Design</option>
-            </select>
+        <label for="yearLevel">Year Level *</label>
+        <select id="yearLevel" name="yearLevel" required>
+            <option value="">Select year level</option>
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+        </select>
 
-            <label for="yearLevel">Year Level</label>
-            <select name="yearLevel" id="yearLevel" required>
-                <option value="">Select your year level</option>
-                <option value="1">Freshman</option>
-                <option value="2">Sophomore</option>
-                <option value="3"></option>
-                <option value="4">4th Year</option>
-            </select>
-
-            <label
-"
-"
-
+        <label>Interests (Select all that apply)</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="interests" value="Sports"> Sports & Recreation</label>
+            <label><input type="checkbox" name="interests" value="Music"> Music & Arts</label>
+            <label><input type="checkbox" name="interests" value="Tech"> Technology</label>
+            <label><input type="checkbox" name="interests" value="Volunteering"> Volunteering</label>
+            <label><input type="checkbox" name="interests" value="Reading"> Reading & Writing</label>
+            <label><input type="checkbox" name="interests" value="Travel"> Travel & Culture</label>
         </div>
+
+        <label for="comments">Additional Comments<br></label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <input type="submit" value="Complete Registration">
     </form>
-    </div>
+</div>
+
 </body>
-</html>
